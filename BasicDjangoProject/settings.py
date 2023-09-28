@@ -26,12 +26,15 @@ SECRET_KEY = 'django-insecure-$!u16k&p7__t6oees$d@&xagt-4vtw3+w3=wgjbe4cm_=k_+lz
 #DEBUG = True
 DEBUG = False
 
-ALLOWED_HOSTS = ['testherokubalazs-30250b6fc65f.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ["testherokubalazs-30250b6fc65f.herokuapp.com", "127.0.0.1"]
+#ALLOWED_HOSTS = ["*"]
+#ALLOWED_HOSTS = []
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    #'helloapp.apps.helloappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -133,5 +136,6 @@ STATICFILES_DIRS = (
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_URL = "/media/"
+
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
